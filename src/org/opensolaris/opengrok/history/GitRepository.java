@@ -82,7 +82,7 @@ public class GitRepository extends Repository {
      * All git commands that emit date that needs to be parsed by
      * {@code getDateFormat()} should use this option.
      */
-    private static final String GIT_DATE_OPT = "--date=iso8601-strict";
+    private static final String GIT_DATE_OPT = "--date=iso8601";
 
     /**
      * Pattern used to extract author/revision from git blame.

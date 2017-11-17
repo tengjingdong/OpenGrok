@@ -125,6 +125,11 @@
 #
 # Print usage to stdout and exit.
 #
+OPENGROK_CTAGS=/usr/bin/ctags
+OPENGROK_APP_SERVER=Tomcat
+OPENGROK_TOMCAT_BASE=/opt/tomcat
+OPENGROK_WEBAPP_CONTEXT="${OPENGROK_WEBAPP_CONTEXT:-source}"
+OPENGROK_INSTANCE_BASE=/opt/opengrok/database/${OPENGROK_WEBAPP_CONTEXT}
 Usage()
 {
     progname=`basename $0`
