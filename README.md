@@ -1,3 +1,17 @@
+TJD Install:
+cd /opt
+tar zxcvf tjd-opengrok.tgz  tjd-tomcat-8.5.23.tgz
+cd xxx
+git reset --hard
+
+cd tomcat
+./bin/startup.sh
+
+
+cd opengrok
+./bin/OpenGrok deploy
+OPENGROK_WEBAPP_CONTEXT=subprj ./bin/OpenGrok index
+
 
 Copyright (c) 2006, 2017 Oracle and/or its affiliates. All rights reserved.
 
